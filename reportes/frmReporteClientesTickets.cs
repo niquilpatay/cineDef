@@ -22,7 +22,7 @@ namespace cineLabo.reportes
             // TODO: esta línea de código carga datos en la tabla 'dSClientesTickets.consultaClientesTickets2' Puede moverla o quitarla según sea necesario.
             this.consultaClientesTickets2TableAdapter.Fill(this.dSClientesTickets.consultaClientesTickets2);
 
-            this.reportViewer1.RefreshReport();
+            this.rvClientesTickets.RefreshReport();
         }
     }
 }
