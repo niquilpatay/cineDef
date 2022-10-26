@@ -1,0 +1,12 @@
+D:\escritorio\UTN\PROGRAMACIÓN\cineLabo\bin\Debug\cineLabo.exe.config
+D:\escritorio\UTN\PROGRAMACIÓN\cineLabo\bin\Debug\cineLabo.exe
+D:\escritorio\UTN\PROGRAMACIÓN\cineLabo\bin\Debug\cineLabo.pdb
+D:\escritorio\UTN\PROGRAMACIÓN\cineLabo\obj\Debug\cineLabo.csproj.AssemblyReference.cache
+D:\escritorio\UTN\PROGRAMACIÓN\cineLabo\obj\Debug\cineLabo.csproj.SuggestedBindingRedirects.cache
+D:\escritorio\UTN\PROGRAMACIÓN\cineLabo\obj\Debug\cineLabo.frmCine.resources
+D:\escritorio\UTN\PROGRAMACIÓN\cineLabo\obj\Debug\cineLabo.frmTickets.resources
+D:\escritorio\UTN\PROGRAMACIÓN\cineLabo\obj\Debug\cineLabo.Properties.Resources.resources
+D:\escritorio\UTN\PROGRAMACIÓN\cineLabo\obj\Debug\cineLabo.csproj.GenerateResource.cache
+D:\escritorio\UTN\PROGRAMACIÓN\cineLabo\obj\Debug\cineLabo.csproj.CoreCompileInputs.cache
+D:\escritorio\UTN\PROGRAMACIÓN\cineLabo\obj\Debug\cineLabo.exe
+D:\escritorio\UTN\PROGRAMACIÓN\cineLabo\obj\Debug\cineLabo.pdb
