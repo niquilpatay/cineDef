@@ -38,6 +38,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
+            this.idFuncion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.asiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reserva = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quitar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.nudAsiento = new System.Windows.Forms.NumericUpDown();
             this.nudDescuento = new System.Windows.Forms.NumericUpDown();
             this.cboReservas = new System.Windows.Forms.ComboBox();
@@ -53,11 +58,6 @@
             this.cboFunciones = new System.Windows.Forms.ComboBox();
             this.dgvFunciones = new System.Windows.Forms.DataGridView();
             this.lblDetalles = new System.Windows.Forms.Label();
-            this.idFuncion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.asiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reserva = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quitar = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAsiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDescuento)).BeginInit();
@@ -81,7 +81,7 @@
             this.cboTipoPago.FormattingEnabled = true;
             this.cboTipoPago.Location = new System.Drawing.Point(105, 44);
             this.cboTipoPago.Name = "cboTipoPago";
-            this.cboTipoPago.Size = new System.Drawing.Size(751, 21);
+            this.cboTipoPago.Size = new System.Drawing.Size(723, 21);
             this.cboTipoPago.TabIndex = 2;
             // 
             // cboSucursal
@@ -89,7 +89,7 @@
             this.cboSucursal.FormattingEnabled = true;
             this.cboSucursal.Location = new System.Drawing.Point(87, 77);
             this.cboSucursal.Name = "cboSucursal";
-            this.cboSucursal.Size = new System.Drawing.Size(769, 21);
+            this.cboSucursal.Size = new System.Drawing.Size(741, 21);
             this.cboSucursal.TabIndex = 4;
             // 
             // cboCliente
@@ -97,7 +97,7 @@
             this.cboCliente.FormattingEnabled = true;
             this.cboCliente.Location = new System.Drawing.Point(74, 110);
             this.cboCliente.Name = "cboCliente";
-            this.cboCliente.Size = new System.Drawing.Size(782, 21);
+            this.cboCliente.Size = new System.Drawing.Size(754, 21);
             this.cboCliente.TabIndex = 6;
             // 
             // dtpFecha
@@ -105,7 +105,7 @@
             this.dtpFecha.Location = new System.Drawing.Point(131, 143);
             this.dtpFecha.MaxDate = new System.DateTime(3000, 1, 1, 0, 0, 0, 0);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(725, 20);
+            this.dtpFecha.Size = new System.Drawing.Size(697, 20);
             this.dtpFecha.TabIndex = 8;
             this.dtpFecha.Value = new System.DateTime(2022, 10, 6, 0, 0, 0, 0);
             // 
@@ -159,15 +159,42 @@
             this.quitar});
             this.dgvDetalles.Location = new System.Drawing.Point(11, 313);
             this.dgvDetalles.Name = "dgvDetalles";
-            this.dgvDetalles.Size = new System.Drawing.Size(845, 150);
+            this.dgvDetalles.Size = new System.Drawing.Size(816, 150);
             this.dgvDetalles.TabIndex = 21;
             this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
+            // 
+            // idFuncion
+            // 
+            this.idFuncion.HeaderText = "idFuncion";
+            this.idFuncion.Name = "idFuncion";
+            // 
+            // asiento
+            // 
+            this.asiento.HeaderText = "# Asiento";
+            this.asiento.Name = "asiento";
+            // 
+            // reserva
+            // 
+            this.reserva.HeaderText = "Reservado:";
+            this.reserva.Name = "reserva";
+            // 
+            // costo
+            // 
+            this.costo.HeaderText = "Costo $";
+            this.costo.Name = "costo";
+            // 
+            // quitar
+            // 
+            this.quitar.HeaderText = "Acciones";
+            this.quitar.Name = "quitar";
+            this.quitar.Text = "QUITAR";
+            this.quitar.UseColumnTextForButtonValue = true;
             // 
             // nudAsiento
             // 
             this.nudAsiento.Location = new System.Drawing.Point(736, 197);
             this.nudAsiento.Maximum = new decimal(new int[] {
-            10000,
+            20,
             0,
             0,
             0});
@@ -177,7 +204,7 @@
             0,
             0});
             this.nudAsiento.Name = "nudAsiento";
-            this.nudAsiento.Size = new System.Drawing.Size(120, 20);
+            this.nudAsiento.Size = new System.Drawing.Size(91, 20);
             this.nudAsiento.TabIndex = 15;
             this.nudAsiento.Value = new decimal(new int[] {
             1,
@@ -195,7 +222,7 @@
             0,
             0});
             this.nudDescuento.Name = "nudDescuento";
-            this.nudDescuento.Size = new System.Drawing.Size(120, 20);
+            this.nudDescuento.Size = new System.Drawing.Size(92, 20);
             this.nudDescuento.TabIndex = 13;
             // 
             // cboReservas
@@ -203,7 +230,7 @@
             this.cboReservas.FormattingEnabled = true;
             this.cboReservas.Location = new System.Drawing.Point(736, 223);
             this.cboReservas.Name = "cboReservas";
-            this.cboReservas.Size = new System.Drawing.Size(120, 21);
+            this.cboReservas.Size = new System.Drawing.Size(92, 21);
             this.cboReservas.TabIndex = 17;
             // 
             // nudCosto
@@ -216,7 +243,7 @@
             0,
             0});
             this.nudCosto.Name = "nudCosto";
-            this.nudCosto.Size = new System.Drawing.Size(145, 20);
+            this.nudCosto.Size = new System.Drawing.Size(117, 20);
             this.nudCosto.TabIndex = 19;
             // 
             // label6
@@ -268,7 +295,7 @@
             // 
             this.btnAgregar.Location = new System.Drawing.Point(671, 273);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(185, 34);
+            this.btnAgregar.Size = new System.Drawing.Size(156, 34);
             this.btnAgregar.TabIndex = 20;
             this.btnAgregar.Text = "AGREGAR";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -276,7 +303,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(780, 468);
+            this.btnCancelar.Location = new System.Drawing.Point(752, 468);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 24;
@@ -286,7 +313,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(698, 468);
+            this.btnAceptar.Location = new System.Drawing.Point(670, 468);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 23;
@@ -319,39 +346,12 @@
             this.lblDetalles.TabIndex = 22;
             this.lblDetalles.Text = "lblDetalles";
             // 
-            // idFuncion
-            // 
-            this.idFuncion.HeaderText = "idFuncion";
-            this.idFuncion.Name = "idFuncion";
-            // 
-            // asiento
-            // 
-            this.asiento.HeaderText = "# Asiento";
-            this.asiento.Name = "asiento";
-            // 
-            // reserva
-            // 
-            this.reserva.HeaderText = "Reservado:";
-            this.reserva.Name = "reserva";
-            // 
-            // costo
-            // 
-            this.costo.HeaderText = "Costo $";
-            this.costo.Name = "costo";
-            // 
-            // quitar
-            // 
-            this.quitar.HeaderText = "Acciones";
-            this.quitar.Name = "quitar";
-            this.quitar.Text = "QUITAR";
-            this.quitar.UseColumnTextForButtonValue = true;
-            // 
             // frmTickets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(867, 498);
+            this.ClientSize = new System.Drawing.Size(836, 498);
             this.Controls.Add(this.lblDetalles);
             this.Controls.Add(this.dgvFunciones);
             this.Controls.Add(this.cboFunciones);

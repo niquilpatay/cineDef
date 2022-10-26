@@ -1,4 +1,5 @@
-﻿using System;
+﻿using cineLabo.reportes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,12 @@ namespace cineLabo
         {
             frmTickets t = new frmTickets();
             t.ShowDialog();
+        }
+
+        private void cLIENTESTICKETSCOMPRADOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReporteClientesTickets rc = new frmReporteClientesTickets();
+            rc.ShowDialog();
         }
     }
 }

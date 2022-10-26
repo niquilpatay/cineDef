@@ -237,5 +237,7 @@ namespace cineLabo
                 totalDetalles();
             }
         }
+
+
     }
 }
