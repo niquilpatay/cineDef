@@ -95,11 +95,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="reportes\frmReporteClientesTickets.cs">
+    <Compile Include="reportes presentacion\frmReporteClientesTickets.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="reportes\frmReporteClientesTickets.Designer.cs">
+    <Compile Include="reportes presentacion\frmReporteClientesTickets.Designer.cs">
       <DependentUpon>frmReporteClientesTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes presentacion\frmReporteClientesTicketsMesPasado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes presentacion\frmReporteClientesTicketsMesPasado.Designer.cs">
+      <DependentUpon>frmReporteClientesTicketsMesPasado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes presentacion\frmReporteSalasAsientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes presentacion\frmReporteSalasAsientos.Designer.cs">
+      <DependentUpon>frmReporteSalasAsientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes presentacion\frmReporteSucursalesRecaudacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes presentacion\frmReporteSucursalesRecaudacion.Designer.cs">
+      <DependentUpon>frmReporteSucursalesRecaudacion.cs</DependentUpon>
     </Compile>
     <Compile Include="servicio\factoryServicio.cs" />
     <Compile Include="servicio\implementFactoryServicio.cs" />
@@ -117,10 +135,22 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="reportes\frmReporteClientesTickets.resx">
+    <EmbeddedResource Include="reportes presentacion\frmReporteClientesTickets.resx">
       <DependentUpon>frmReporteClientesTickets.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="reportes presentacion\frmReporteClientesTicketsMesPasado.resx">
+      <DependentUpon>frmReporteClientesTicketsMesPasado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes presentacion\frmReporteSalasAsientos.resx">
+      <DependentUpon>frmReporteSalasAsientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes presentacion\frmReporteSucursalesRecaudacion.resx">
+      <DependentUpon>frmReporteSucursalesRecaudacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptClientesTickets2.rdlc" />
+    <EmbeddedResource Include="rptClientesTicketsMesPasado.rdlc" />
+    <EmbeddedResource Include="rptSalasAsientos.rdlc" />
+    <EmbeddedResource Include="rptSucursales.rdlc" />
     <None Include="DSClientesTickets.xsc">
       <DependentUpon>DSClientesTickets.xsd</DependentUpon>
     </None>
@@ -160,6 +190,9 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="reportes archivos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

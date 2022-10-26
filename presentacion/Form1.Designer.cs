@@ -33,6 +33,9 @@
             this.nUEVOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONSULTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cLIENTESTICKETSCOMPRADOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sALASYASIENTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sUCURSALESYRECAUDACIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.dtpFechaMenu = new System.Windows.Forms.DateTimePicker();
@@ -68,7 +71,10 @@
             // cONSULTASToolStripMenuItem
             // 
             this.cONSULTASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTESTICKETSCOMPRADOSToolStripMenuItem});
+            this.cLIENTESTICKETSCOMPRADOSToolStripMenuItem,
+            this.sALASYASIENTOSToolStripMenuItem,
+            this.sUCURSALESYRECAUDACIÓNToolStripMenuItem,
+            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem});
             this.cONSULTASToolStripMenuItem.Name = "cONSULTASToolStripMenuItem";
             this.cONSULTASToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.cONSULTASToolStripMenuItem.Text = "REPORTES";
@@ -76,9 +82,30 @@
             // cLIENTESTICKETSCOMPRADOSToolStripMenuItem
             // 
             this.cLIENTESTICKETSCOMPRADOSToolStripMenuItem.Name = "cLIENTESTICKETSCOMPRADOSToolStripMenuItem";
-            this.cLIENTESTICKETSCOMPRADOSToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
+            this.cLIENTESTICKETSCOMPRADOSToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
             this.cLIENTESTICKETSCOMPRADOSToolStripMenuItem.Text = "CLIENTES Y TICKETS COMPRADOS";
             this.cLIENTESTICKETSCOMPRADOSToolStripMenuItem.Click += new System.EventHandler(this.cLIENTESTICKETSCOMPRADOSToolStripMenuItem_Click);
+            // 
+            // sALASYASIENTOSToolStripMenuItem
+            // 
+            this.sALASYASIENTOSToolStripMenuItem.Name = "sALASYASIENTOSToolStripMenuItem";
+            this.sALASYASIENTOSToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
+            this.sALASYASIENTOSToolStripMenuItem.Text = "SALAS Y ASIENTOS";
+            this.sALASYASIENTOSToolStripMenuItem.Click += new System.EventHandler(this.sALASYASIENTOSToolStripMenuItem_Click);
+            // 
+            // sUCURSALESYRECAUDACIÓNToolStripMenuItem
+            // 
+            this.sUCURSALESYRECAUDACIÓNToolStripMenuItem.Name = "sUCURSALESYRECAUDACIÓNToolStripMenuItem";
+            this.sUCURSALESYRECAUDACIÓNToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
+            this.sUCURSALESYRECAUDACIÓNToolStripMenuItem.Text = "SUCURSALES Y RECAUDACIÓN";
+            this.sUCURSALESYRECAUDACIÓNToolStripMenuItem.Click += new System.EventHandler(this.sUCURSALESYRECAUDACIÓNToolStripMenuItem_Click);
+            // 
+            // cLIENTESCON1TICKETELMESPASADOToolStripMenuItem
+            // 
+            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem.Name = "cLIENTESCON1TICKETELMESPASADOToolStripMenuItem";
+            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem.Size = new System.Drawing.Size(308, 22);
+            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem.Text = "CLIENTES CON +1 TICKET EL MES PASADO";
+            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem.Click += new System.EventHandler(this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -140,6 +167,9 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.DateTimePicker dtpFechaMenu;
         private System.Windows.Forms.ToolStripMenuItem cLIENTESTICKETSCOMPRADOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sALASYASIENTOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sUCURSALESYRECAUDACIÓNToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cLIENTESCON1TICKETELMESPASADOToolStripMenuItem;
     }
 }
 

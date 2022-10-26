@@ -1,4 +1,5 @@
 ﻿using cineLabo.reportes;
+using cineLabo.reportes_presentacion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,5 +30,25 @@ namespace cineLabo
             frmReporteClientesTickets rc = new frmReporteClientesTickets();
             rc.ShowDialog();
         }
+
+        private void sALASYASIENTOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReporteSalasAsientos sa = new frmReporteSalasAsientos();
+            sa.ShowDialog();    
+        }
+
+        private void sUCURSALESYRECAUDACIÓNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReporteSucursalesRecaudacion sr = new frmReporteSucursalesRecaudacion();
+            sr.ShowDialog();
+        }
+
+        private void cLIENTESCON1TICKETELMESPASADOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReporteClientesTicketsMesPasado cm = new frmReporteClientesTicketsMesPasado();
+            cm.ShowDialog();
+        }
+
+
     }
 }
