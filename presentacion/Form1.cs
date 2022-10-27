@@ -37,12 +37,6 @@ namespace cineLabo
             sa.ShowDialog();    
         }
 
-        private void sUCURSALESYRECAUDACIÓNToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmReporteSucursalesRecaudacion sr = new frmReporteSucursalesRecaudacion();
-            sr.ShowDialog();
-        }
-
         private void cLIENTESCON1TICKETELMESPASADOToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmReporteClientesTicketsMesPasado cm = new frmReporteClientesTicketsMesPasado();
@@ -59,6 +53,29 @@ namespace cineLabo
         {
             frmReportePeliTaquillera pt = new frmReportePeliTaquillera();
             pt.ShowDialog();
+        }
+
+        private void sUCURSALESYRECAUDACIÓNPORAÑOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReporteSucursalPoranio sp = new frmReporteSucursalPoranio();
+            sp.ShowDialog();
+        }
+
+        private void cLIENTESYCOMPRASPORMESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReporteClientesPorMes cpm = new frmReporteClientesPorMes();
+            cpm.ShowDialog();
+        }
+
+        private void cLIENTESCONDEXCOMPRASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*frmReporteClientesQVinieron rqv = new frmReporteClientesQVinieron();
+            rqv.ShowDialog();*/
+        }
+
+        private void frmCine_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

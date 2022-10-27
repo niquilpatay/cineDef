@@ -101,6 +101,12 @@
     <Compile Include="reportes presentacion\frmReporteClientesNoVinieron.Designer.cs">
       <DependentUpon>frmReporteClientesNoVinieron.cs</DependentUpon>
     </Compile>
+    <Compile Include="reportes presentacion\frmReporteClientesPorMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes presentacion\frmReporteClientesPorMes.Designer.cs">
+      <DependentUpon>frmReporteClientesPorMes.cs</DependentUpon>
+    </Compile>
     <Compile Include="reportes presentacion\frmReporteClientesTickets.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,11 +131,11 @@
     <Compile Include="reportes presentacion\frmReporteSalasAsientos.Designer.cs">
       <DependentUpon>frmReporteSalasAsientos.cs</DependentUpon>
     </Compile>
-    <Compile Include="reportes presentacion\frmReporteSucursalesRecaudacion.cs">
+    <Compile Include="reportes presentacion\frmReporteSucursalPoranio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="reportes presentacion\frmReporteSucursalesRecaudacion.Designer.cs">
-      <DependentUpon>frmReporteSucursalesRecaudacion.cs</DependentUpon>
+    <Compile Include="reportes presentacion\frmReporteSucursalPoranio.Designer.cs">
+      <DependentUpon>frmReporteSucursalPoranio.cs</DependentUpon>
     </Compile>
     <Compile Include="servicio\factoryServicio.cs" />
     <Compile Include="servicio\implementFactoryServicio.cs" />
@@ -150,6 +156,9 @@
     <EmbeddedResource Include="reportes presentacion\frmReporteClientesNoVinieron.resx">
       <DependentUpon>frmReporteClientesNoVinieron.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="reportes presentacion\frmReporteClientesPorMes.resx">
+      <DependentUpon>frmReporteClientesPorMes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="reportes presentacion\frmReporteClientesTickets.resx">
       <DependentUpon>frmReporteClientesTickets.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,15 +171,16 @@
     <EmbeddedResource Include="reportes presentacion\frmReporteSalasAsientos.resx">
       <DependentUpon>frmReporteSalasAsientos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="reportes presentacion\frmReporteSucursalesRecaudacion.resx">
-      <DependentUpon>frmReporteSucursalesRecaudacion.cs</DependentUpon>
+    <EmbeddedResource Include="reportes presentacion\frmReporteSucursalPoranio.resx">
+      <DependentUpon>frmReporteSucursalPoranio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptClientesComprasMes.rdlc" />
     <EmbeddedResource Include="rptClientesTickets2.rdlc" />
     <EmbeddedResource Include="rptClientesTicketsMesPasado.rdlc" />
     <EmbeddedResource Include="rptConsultaClientesNoVinieron.rdlc" />
     <EmbeddedResource Include="rptPeliTaquillera.rdlc" />
     <EmbeddedResource Include="rptSalasAsientos.rdlc" />
-    <EmbeddedResource Include="rptSucursales.rdlc" />
+    <EmbeddedResource Include="rptSucursalPoranio.rdlc" />
     <None Include="DSClientesTickets.xsc">
       <DependentUpon>DSClientesTickets.xsd</DependentUpon>
     </None>

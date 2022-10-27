@@ -32,18 +32,18 @@
             this.tICKETSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nUEVOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONSULTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sUCURSALESYRECAUDACIÓNPORAÑOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pELÍCULATAQUILLERAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTESYCOMPRASPORMESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cLIENTESTICKETSCOMPRADOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sALASYASIENTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sUCURSALESYRECAUDACIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pELÍCULATAQUILLERAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTESYCOMPRASPORMESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTESCONDEXCOMPRASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.dtpFechaMenu = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.spConsultarSucursalPoranioTableAdapter1 = new cineLabo.DSClientesTicketsTableAdapters.spConsultarSucursalPoranioTableAdapter();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,17 +76,51 @@
             // cONSULTASToolStripMenuItem
             // 
             this.cONSULTASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTESTICKETSCOMPRADOSToolStripMenuItem,
-            this.sALASYASIENTOSToolStripMenuItem,
-            this.sUCURSALESYRECAUDACIÓNToolStripMenuItem,
-            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem,
-            this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem,
+            this.sUCURSALESYRECAUDACIÓNPORAÑOToolStripMenuItem,
             this.pELÍCULATAQUILLERAToolStripMenuItem,
+            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem,
             this.cLIENTESYCOMPRASPORMESToolStripMenuItem,
-            this.cLIENTESCONDEXCOMPRASToolStripMenuItem});
+            this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem,
+            this.cLIENTESTICKETSCOMPRADOSToolStripMenuItem,
+            this.sALASYASIENTOSToolStripMenuItem});
             this.cONSULTASToolStripMenuItem.Name = "cONSULTASToolStripMenuItem";
             this.cONSULTASToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.cONSULTASToolStripMenuItem.Text = "REPORTES";
+            // 
+            // sUCURSALESYRECAUDACIÓNPORAÑOToolStripMenuItem
+            // 
+            this.sUCURSALESYRECAUDACIÓNPORAÑOToolStripMenuItem.Name = "sUCURSALESYRECAUDACIÓNPORAÑOToolStripMenuItem";
+            this.sUCURSALESYRECAUDACIÓNPORAÑOToolStripMenuItem.Size = new System.Drawing.Size(305, 22);
+            this.sUCURSALESYRECAUDACIÓNPORAÑOToolStripMenuItem.Text = "SUCURSALES Y RECAUDACIÓN POR AÑO";
+            this.sUCURSALESYRECAUDACIÓNPORAÑOToolStripMenuItem.Click += new System.EventHandler(this.sUCURSALESYRECAUDACIÓNPORAÑOToolStripMenuItem_Click);
+            // 
+            // pELÍCULATAQUILLERAToolStripMenuItem
+            // 
+            this.pELÍCULATAQUILLERAToolStripMenuItem.Name = "pELÍCULATAQUILLERAToolStripMenuItem";
+            this.pELÍCULATAQUILLERAToolStripMenuItem.Size = new System.Drawing.Size(305, 22);
+            this.pELÍCULATAQUILLERAToolStripMenuItem.Text = "PELÍCULA + TAQUILLERA X AÑO";
+            this.pELÍCULATAQUILLERAToolStripMenuItem.Click += new System.EventHandler(this.pELÍCULATAQUILLERAToolStripMenuItem_Click);
+            // 
+            // cLIENTESCON1TICKETELMESPASADOToolStripMenuItem
+            // 
+            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem.Name = "cLIENTESCON1TICKETELMESPASADOToolStripMenuItem";
+            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem.Size = new System.Drawing.Size(305, 22);
+            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem.Text = "CLIENTES CON +1 TICKET EL MES PASADO";
+            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem.Click += new System.EventHandler(this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem_Click);
+            // 
+            // cLIENTESYCOMPRASPORMESToolStripMenuItem
+            // 
+            this.cLIENTESYCOMPRASPORMESToolStripMenuItem.Name = "cLIENTESYCOMPRASPORMESToolStripMenuItem";
+            this.cLIENTESYCOMPRASPORMESToolStripMenuItem.Size = new System.Drawing.Size(305, 22);
+            this.cLIENTESYCOMPRASPORMESToolStripMenuItem.Text = "CLIENTES Y COMPRAS POR MES";
+            this.cLIENTESYCOMPRASPORMESToolStripMenuItem.Click += new System.EventHandler(this.cLIENTESYCOMPRASPORMESToolStripMenuItem_Click);
+            // 
+            // cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem
+            // 
+            this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem.Name = "cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem";
+            this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem.Size = new System.Drawing.Size(305, 22);
+            this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem.Text = "CLIENTES Q NO VINIERON ENTRE 2 FECHAS";
+            this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem.Click += new System.EventHandler(this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem_Click);
             // 
             // cLIENTESTICKETSCOMPRADOSToolStripMenuItem
             // 
@@ -101,46 +135,6 @@
             this.sALASYASIENTOSToolStripMenuItem.Size = new System.Drawing.Size(305, 22);
             this.sALASYASIENTOSToolStripMenuItem.Text = "SALAS Y ASIENTOS";
             this.sALASYASIENTOSToolStripMenuItem.Click += new System.EventHandler(this.sALASYASIENTOSToolStripMenuItem_Click);
-            // 
-            // sUCURSALESYRECAUDACIÓNToolStripMenuItem
-            // 
-            this.sUCURSALESYRECAUDACIÓNToolStripMenuItem.Name = "sUCURSALESYRECAUDACIÓNToolStripMenuItem";
-            this.sUCURSALESYRECAUDACIÓNToolStripMenuItem.Size = new System.Drawing.Size(305, 22);
-            this.sUCURSALESYRECAUDACIÓNToolStripMenuItem.Text = "SUCURSALES Y SU RECAUDACIÓN";
-            this.sUCURSALESYRECAUDACIÓNToolStripMenuItem.Click += new System.EventHandler(this.sUCURSALESYRECAUDACIÓNToolStripMenuItem_Click);
-            // 
-            // cLIENTESCON1TICKETELMESPASADOToolStripMenuItem
-            // 
-            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem.Name = "cLIENTESCON1TICKETELMESPASADOToolStripMenuItem";
-            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem.Size = new System.Drawing.Size(305, 22);
-            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem.Text = "CLIENTES CON +1 TICKET EL MES PASADO";
-            this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem.Click += new System.EventHandler(this.cLIENTESCON1TICKETELMESPASADOToolStripMenuItem_Click);
-            // 
-            // cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem
-            // 
-            this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem.Name = "cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem";
-            this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem.Size = new System.Drawing.Size(305, 22);
-            this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem.Text = "CLIENTES Q NO VINIERON ENTRE 2 FECHAS";
-            this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem.Click += new System.EventHandler(this.cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem_Click);
-            // 
-            // pELÍCULATAQUILLERAToolStripMenuItem
-            // 
-            this.pELÍCULATAQUILLERAToolStripMenuItem.Name = "pELÍCULATAQUILLERAToolStripMenuItem";
-            this.pELÍCULATAQUILLERAToolStripMenuItem.Size = new System.Drawing.Size(305, 22);
-            this.pELÍCULATAQUILLERAToolStripMenuItem.Text = "PELÍCULA + TAQUILLERA X AÑO";
-            this.pELÍCULATAQUILLERAToolStripMenuItem.Click += new System.EventHandler(this.pELÍCULATAQUILLERAToolStripMenuItem_Click);
-            // 
-            // cLIENTESYCOMPRASPORMESToolStripMenuItem
-            // 
-            this.cLIENTESYCOMPRASPORMESToolStripMenuItem.Name = "cLIENTESYCOMPRASPORMESToolStripMenuItem";
-            this.cLIENTESYCOMPRASPORMESToolStripMenuItem.Size = new System.Drawing.Size(305, 22);
-            this.cLIENTESYCOMPRASPORMESToolStripMenuItem.Text = "CLIENTES Y COMPRAS POR MES";
-            // 
-            // cLIENTESCONDEXCOMPRASToolStripMenuItem
-            // 
-            this.cLIENTESCONDEXCOMPRASToolStripMenuItem.Name = "cLIENTESCONDEXCOMPRASToolStripMenuItem";
-            this.cLIENTESCONDEXCOMPRASToolStripMenuItem.Size = new System.Drawing.Size(305, 22);
-            this.cLIENTESCONDEXCOMPRASToolStripMenuItem.Text = "CLIENTES CON + DE X COMPRAS";
             // 
             // label1
             // 
@@ -183,6 +177,10 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(47, 20);
             this.dateTimePicker1.TabIndex = 4;
             // 
+            // spConsultarSucursalPoranioTableAdapter1
+            // 
+            this.spConsultarSucursalPoranioTableAdapter1.ClearBeforeFill = true;
+            // 
             // frmCine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,6 +198,7 @@
             this.MaximizeBox = false;
             this.Name = "frmCine";
             this.Text = "CINE";
+            this.Load += new System.EventHandler(this.frmCine_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -218,13 +217,13 @@
         private System.Windows.Forms.DateTimePicker dtpFechaMenu;
         private System.Windows.Forms.ToolStripMenuItem cLIENTESTICKETSCOMPRADOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sALASYASIENTOSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sUCURSALESYRECAUDACIÓNToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cLIENTESCON1TICKETELMESPASADOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cLIENTESYCOMPRASPORMESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pELÍCULATAQUILLERAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTESCONDEXCOMPRASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ToolStripMenuItem sUCURSALESYRECAUDACIÓNPORAÑOToolStripMenuItem;
+        private DSClientesTicketsTableAdapters.spConsultarSucursalPoranioTableAdapter spConsultarSucursalPoranioTableAdapter1;
     }
 }
 
