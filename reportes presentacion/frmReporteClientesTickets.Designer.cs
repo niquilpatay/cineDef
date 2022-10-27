@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.consultaClientesTickets2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dSClientesTicketsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dSClientesTickets = new cineLabo.DSClientesTickets();
@@ -57,15 +57,14 @@
             // 
             // rvClientesTickets
             // 
-            this.rvClientesTickets.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource2.Name = "DSClientesTickets2";
-            reportDataSource2.Value = this.consultaClientesTickets2BindingSource;
-            this.rvClientesTickets.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource3.Name = "DSClientesTickets2";
+            reportDataSource3.Value = this.consultaClientesTickets2BindingSource;
+            this.rvClientesTickets.LocalReport.DataSources.Add(reportDataSource3);
             this.rvClientesTickets.LocalReport.ReportEmbeddedResource = "cineLabo.rptClientesTickets2.rdlc";
-            this.rvClientesTickets.Location = new System.Drawing.Point(0, 0);
+            this.rvClientesTickets.Location = new System.Drawing.Point(12, 12);
             this.rvClientesTickets.Name = "rvClientesTickets";
             this.rvClientesTickets.ServerReport.BearerToken = null;
-            this.rvClientesTickets.Size = new System.Drawing.Size(933, 582);
+            this.rvClientesTickets.Size = new System.Drawing.Size(909, 558);
             this.rvClientesTickets.TabIndex = 0;
             // 
             // consultaClientesTickets2TableAdapter
@@ -76,12 +75,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::cineLabo.Properties.Resources.pochoclo;
             this.ClientSize = new System.Drawing.Size(933, 582);
             this.Controls.Add(this.rvClientesTickets);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "frmReporteClientesTickets";
-            this.Text = "REPORTE CLIENTES & TICKETS";
+            this.Text = "CLIENTES & TICKETS";
             this.Load += new System.EventHandler(this.frmReporteClientesTickets_Load);
             ((System.ComponentModel.ISupportInitialize)(this.consultaClientesTickets2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSClientesTicketsBindingSource)).EndInit();

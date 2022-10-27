@@ -49,6 +49,16 @@ namespace cineLabo
             cm.ShowDialog();
         }
 
+        private void cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReporteClientesNoVinieron cnv = new frmReporteClientesNoVinieron();
+            cnv.ShowDialog();
+        }
 
+        private void pELÍCULATAQUILLERAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReportePeliTaquillera pt = new frmReportePeliTaquillera();
+            pt.ShowDialog();
+        }
     }
 }

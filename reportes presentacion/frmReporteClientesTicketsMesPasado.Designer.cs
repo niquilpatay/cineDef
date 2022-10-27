@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.consultaClientesTicketsMesPasadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dSClientesTickets = new cineLabo.DSClientesTickets();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -50,15 +50,14 @@
             // 
             // reportViewer1
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DSClientesTicketsMesPasado";
-            reportDataSource1.Value = this.consultaClientesTicketsMesPasadoBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource3.Name = "DSClientesTicketsMesPasado";
+            reportDataSource3.Value = this.consultaClientesTicketsMesPasadoBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "cineLabo.rptClientesTicketsMesPasado.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Location = new System.Drawing.Point(12, 12);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.reportViewer1.Size = new System.Drawing.Size(776, 426);
             this.reportViewer1.TabIndex = 0;
             // 
             // consultaClientesTicketsMesPasadoTableAdapter
@@ -69,10 +68,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::cineLabo.Properties.Resources.pochoclo;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
             this.Name = "frmReporteClientesTicketsMesPasado";
-            this.Text = "frmReporteClientesTicketsMesPasado";
+            this.Text = "CLIENTES C/ +1 TICKET EL MES PASADO";
             this.Load += new System.EventHandler(this.frmReporteClientesTicketsMesPasado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.consultaClientesTicketsMesPasadoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSClientesTickets)).EndInit();

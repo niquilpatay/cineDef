@@ -68,5 +68,15 @@ namespace cineLabo.Properties {
                 return ResourceManager.GetString("cnnString", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pochoclo {
+            get {
+                object obj = ResourceManager.GetObject("pochoclo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

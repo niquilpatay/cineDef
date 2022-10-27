@@ -95,6 +95,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="reportes presentacion\frmReporteClientesNoVinieron.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes presentacion\frmReporteClientesNoVinieron.Designer.cs">
+      <DependentUpon>frmReporteClientesNoVinieron.cs</DependentUpon>
+    </Compile>
     <Compile Include="reportes presentacion\frmReporteClientesTickets.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,12 @@
     </Compile>
     <Compile Include="reportes presentacion\frmReporteClientesTicketsMesPasado.Designer.cs">
       <DependentUpon>frmReporteClientesTicketsMesPasado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes presentacion\frmReportePeliTaquillera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes presentacion\frmReportePeliTaquillera.Designer.cs">
+      <DependentUpon>frmReportePeliTaquillera.cs</DependentUpon>
     </Compile>
     <Compile Include="reportes presentacion\frmReporteSalasAsientos.cs">
       <SubType>Form</SubType>
@@ -135,11 +147,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="reportes presentacion\frmReporteClientesNoVinieron.resx">
+      <DependentUpon>frmReporteClientesNoVinieron.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="reportes presentacion\frmReporteClientesTickets.resx">
       <DependentUpon>frmReporteClientesTickets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reportes presentacion\frmReporteClientesTicketsMesPasado.resx">
       <DependentUpon>frmReporteClientesTicketsMesPasado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes presentacion\frmReportePeliTaquillera.resx">
+      <DependentUpon>frmReportePeliTaquillera.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reportes presentacion\frmReporteSalasAsientos.resx">
       <DependentUpon>frmReporteSalasAsientos.cs</DependentUpon>
@@ -149,6 +167,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rptClientesTickets2.rdlc" />
     <EmbeddedResource Include="rptClientesTicketsMesPasado.rdlc" />
+    <EmbeddedResource Include="rptConsultaClientesNoVinieron.rdlc" />
+    <EmbeddedResource Include="rptPeliTaquillera.rdlc" />
     <EmbeddedResource Include="rptSalasAsientos.rdlc" />
     <EmbeddedResource Include="rptSucursales.rdlc" />
     <None Include="DSClientesTickets.xsc">
@@ -177,6 +197,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\pochoclo.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

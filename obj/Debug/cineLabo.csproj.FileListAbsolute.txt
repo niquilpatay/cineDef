@@ -135,3 +135,5 @@ C:\Users\Ignacio\Documents\GitHub\cineDef\obj\Debug\cineLabo.pdb
 C:\Users\Ignacio\Documents\GitHub\cineDef\obj\Debug\cineLabo.reportes.frmReporteSalasAsientos.resources
 C:\Users\Ignacio\Documents\GitHub\cineDef\obj\Debug\cineLabo.reportes_presentacion.frmReporteSucursalesRecaudacion.resources
 C:\Users\Ignacio\Documents\GitHub\cineDef\obj\Debug\cineLabo.reportes_presentacion.frmReporteClientesTicketsMesPasado.resources
+C:\Users\Ignacio\Documents\GitHub\cineDef\obj\Debug\cineLabo.reportes_presentacion.frmReporteClientesNoVinieron.resources
+C:\Users\Ignacio\Documents\GitHub\cineDef\obj\Debug\cineLabo.reportes_presentacion.frmReportePeliTaquillera.resources
