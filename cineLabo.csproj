@@ -71,11 +71,6 @@
     <Compile Include="dominio\DetalleTicket.cs" />
     <Compile Include="dominio\Funcion.cs" />
     <Compile Include="dominio\Ticket.cs" />
-    <Compile Include="DSClientesTickets.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DSClientesTickets.xsd</DependentUpon>
-    </Compile>
     <Compile Include="presentacion\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,48 +90,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="reportes presentacion\frmReporteClientesNoVinieron.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReporteClientesNoVinieron.Designer.cs">
-      <DependentUpon>frmReporteClientesNoVinieron.cs</DependentUpon>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReporteClientesPorMes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReporteClientesPorMes.Designer.cs">
-      <DependentUpon>frmReporteClientesPorMes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReporteClientesTickets.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReporteClientesTickets.Designer.cs">
-      <DependentUpon>frmReporteClientesTickets.cs</DependentUpon>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReporteClientesTicketsMesPasado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReporteClientesTicketsMesPasado.Designer.cs">
-      <DependentUpon>frmReporteClientesTicketsMesPasado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReportePeliTaquillera.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReportePeliTaquillera.Designer.cs">
-      <DependentUpon>frmReportePeliTaquillera.cs</DependentUpon>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReporteSalasAsientos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReporteSalasAsientos.Designer.cs">
-      <DependentUpon>frmReporteSalasAsientos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReporteSucursalPoranio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="reportes presentacion\frmReporteSucursalPoranio.Designer.cs">
-      <DependentUpon>frmReporteSucursalPoranio.cs</DependentUpon>
-    </Compile>
     <Compile Include="servicio\factoryServicio.cs" />
     <Compile Include="servicio\implementFactoryServicio.cs" />
     <Compile Include="servicio\iServicio.cs" />
@@ -153,45 +106,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="reportes presentacion\frmReporteClientesNoVinieron.resx">
-      <DependentUpon>frmReporteClientesNoVinieron.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reportes presentacion\frmReporteClientesPorMes.resx">
-      <DependentUpon>frmReporteClientesPorMes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reportes presentacion\frmReporteClientesTickets.resx">
-      <DependentUpon>frmReporteClientesTickets.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reportes presentacion\frmReporteClientesTicketsMesPasado.resx">
-      <DependentUpon>frmReporteClientesTicketsMesPasado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reportes presentacion\frmReportePeliTaquillera.resx">
-      <DependentUpon>frmReportePeliTaquillera.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reportes presentacion\frmReporteSalasAsientos.resx">
-      <DependentUpon>frmReporteSalasAsientos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reportes presentacion\frmReporteSucursalPoranio.resx">
-      <DependentUpon>frmReporteSucursalPoranio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="rptClientesComprasMes.rdlc" />
-    <EmbeddedResource Include="rptClientesTickets2.rdlc" />
-    <EmbeddedResource Include="rptClientesTicketsMesPasado.rdlc" />
-    <EmbeddedResource Include="rptConsultaClientesNoVinieron.rdlc" />
-    <EmbeddedResource Include="rptPeliTaquillera.rdlc" />
-    <EmbeddedResource Include="rptSalasAsientos.rdlc" />
-    <EmbeddedResource Include="rptSucursalPoranio.rdlc" />
-    <None Include="DSClientesTickets.xsc">
-      <DependentUpon>DSClientesTickets.xsd</DependentUpon>
-    </None>
-    <None Include="DSClientesTickets.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DSClientesTickets.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DSClientesTickets.xss">
-      <DependentUpon>DSClientesTickets.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -222,8 +136,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="reportes archivos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

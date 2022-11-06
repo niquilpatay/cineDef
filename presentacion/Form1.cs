@@ -1,5 +1,4 @@
-﻿using cineLabo.reportes;
-using cineLabo.reportes_presentacion;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,47 +24,7 @@ namespace cineLabo
             t.ShowDialog();
         }
 
-        private void cLIENTESTICKETSCOMPRADOSToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmReporteClientesTickets rc = new frmReporteClientesTickets();
-            rc.ShowDialog();
-        }
-
-        private void sALASYASIENTOSToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmReporteSalasAsientos sa = new frmReporteSalasAsientos();
-            sa.ShowDialog();    
-        }
-
-        private void cLIENTESCON1TICKETELMESPASADOToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmReporteClientesTicketsMesPasado cm = new frmReporteClientesTicketsMesPasado();
-            cm.ShowDialog();
-        }
-
-        private void cLIENTESQNOVINIERONENTRE2FECHASToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmReporteClientesNoVinieron cnv = new frmReporteClientesNoVinieron();
-            cnv.ShowDialog();
-        }
-
-        private void pELÍCULATAQUILLERAToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmReportePeliTaquillera pt = new frmReportePeliTaquillera();
-            pt.ShowDialog();
-        }
-
-        private void sUCURSALESYRECAUDACIÓNPORAÑOToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmReporteSucursalPoranio sp = new frmReporteSucursalPoranio();
-            sp.ShowDialog();
-        }
-
-        private void cLIENTESYCOMPRASPORMESToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmReporteClientesPorMes cpm = new frmReporteClientesPorMes();
-            cpm.ShowDialog();
-        }
+      
 
         private void cLIENTESCONDEXCOMPRASToolStripMenuItem_Click(object sender, EventArgs e)
         {
